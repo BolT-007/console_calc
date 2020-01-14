@@ -182,18 +182,18 @@ namespace Bandysoft
     {
         public operand(string _symbol,int _priority,functdel _funct)
         {
-            symbol = _symbol; //символ который будет считыватся программой во входной строке
-            priority = _priority; //приоритет (чем больше тем выше приоритет 1,2
+            symbol = _symbol; 
+            priority = _priority; 
 
-            Funct = _funct; //функция которая будет выполнять решение операции (должна быть описана в теле класса)
+            Funct = _funct; 
 
         }
 
-        public string symbol;
+        public string symbol;//символ который будет считыватся программой во входной строке
         public int priority; //не приоритет а вес операции чем больше - тем приоритетней
-        public delegate double functdel(double val1, double val2);                     //public * funct;
-        public functdel Funct;
-        
+        public delegate double functdel(double val1, double val2);                  
+        public functdel Funct;  //функция которая будет выполнять решение операции (должна быть описана в теле класса)
+
         public static double fplus(double val1, double val2)
         {
 
