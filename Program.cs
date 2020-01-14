@@ -26,7 +26,7 @@ namespace Bandysoft
             operandlist.Add(new operand("+", 1, operand.fplus));
             operandlist.Add(new operand("-", 1, operand.fminus));
             operandlist.Add(new operand("*", 2, operand.milty));
-            operandlist.Add(new operand("/", 1, operand.dev));
+            operandlist.Add(new operand("/", 2, operand.dev));
 
            
 
@@ -34,15 +34,8 @@ namespace Bandysoft
 
             Console.WriteLine("Добро пожаловать в калькулятор. Тестовое задание для BandySoft. Введите входную строку содержащую математическое выражение (целые и десятично-дробные числа, знаки +, -, *, / и скобки)");
             string inputStr = Console.ReadLine();
-           // Console.WriteLine(inputStr);
+          
 
-            //разбиваем на простые радикалы.
-
-            string[] separators = new string[] { "+", "-","(",")" };//
-            char[] separators2 = new char[] { '+', '-', '(', ')' };//
-
-
-           // Console.WriteLine(inputStr.LastIndexOfAny(separators2));
 
             Console.WriteLine(doaction(inputStr));
             
