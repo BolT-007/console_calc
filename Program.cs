@@ -182,9 +182,10 @@ namespace Bandysoft
     {
         public operand(string _symbol,int _priority,functdel _funct)
         {
-            symbol = _symbol;
-            priority = _priority;
-            Funct = _funct;
+            symbol = _symbol; //символ который будет считыватся программой во входной строке
+            priority = _priority; //приоритет (чем больше тем выше приоритет 1,2
+
+            Funct = _funct; //функция которая будет выполнять решение операции (должна быть описана в теле класса)
 
         }
 
